@@ -1,0 +1,99 @@
+
+/*----- faqs----- */
+.faqs{
+    margin-bottom: 20px;
+}
+.faqs >div{
+    width: 90%;
+    margin:0 auto;
+    
+}
+.faqs h2{
+    display: inline;
+    border-bottom: 2px solid black;
+}
+ 
+.faqs-allcard{
+    display: flex;
+    gap:27px;
+    margin-top: 10px;
+    overflow-x: auto;
+    justify-content: left;
+    align-items: center;
+    overflow-x:auto ;
+    scroll-behavior: smooth;
+}
+.faqs-allcard::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.faq-card{
+    min-width: 370px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align:left;
+    border: 1px solid rgb(99, 97, 97);
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgba(19, 72, 112, 1);
+    flex:1;
+    height: 15rem;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.faq-card p{
+    margin:0
+}
+
+.faq-card p:nth-child(1){
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.faq-card p:nth-child(2){
+    font-size: 15px;
+    display: none;
+    transition: ease-in-out 0.4s;
+}
+.faqs-allcard:hover > article:hover p:nth-child(2){
+    /* background-color: aquamarine; */
+    display: block;
+    
+
+} 
+.faqs-allcard:hover > article:hover p:nth-child(1){
+    text-align:left;
+    display: none;
+}
+
+
+.faqs-title h2{
+    border-bottom: none;
+}
+.faqs-allcard .left-icon,.right-icon {
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    background: none;
+    border: none;
+    z-index: 10;
+    padding: 0;
+}
+.right-icon{
+    right: 0;
+}
+
+@media screen and (max-width:600px){
+    .faqs-allcard{
+        justify-content: left;
+        width: 100%;
+    }
+    .faq-card {
+        min-width: 91%;
+        height: 16rem;
+    }
+
+}
+
+

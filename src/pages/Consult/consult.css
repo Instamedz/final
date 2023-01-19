@@ -1,0 +1,112 @@
+.consult-hero{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    position: relative;
+    gap:5%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.consult-hero >div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* padding: 0px 30px; */
+    position: relative;
+    gap: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.consult-hero .nursephote{
+/* position: absolute; */
+width: 28%;
+}
+.consult-hero a img{
+    position: relative;
+    width: 95%;
+    top: 21px;
+}
+.consult-hero a{
+    width:50%
+}
+
+/* .consult-hero a img{
+    position: absolute;
+} */
+
+
+/* ------experts---- */
+
+/* .service-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:5px 0 15px 0;
+    
+}
+.service-title > div{
+    width:146px;
+    height: 3px;
+    background-color: #38387f;
+}
+
+.service-title > h1{
+    margin: 0;
+    font-size: 29px;
+} */
+.experts-title h2{
+    font-size: 30px;
+    /* margin:0 100px; */
+    
+    display: inline;
+    border-bottom: 3px solid black;
+}
+.experts-title{
+    text-align: center;
+}
+
+.experts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 50px;
+    margin: 10px 0 30px 0;
+    gap:20px;
+}
+.consultpage .consult-hero >img{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .consultpage .experts{
+        padding: 0;
+    }
+    .consultpage .experts>img{
+        display: none;
+        }
+    .consultpage .c-expert-container {
+        display: flex;
+        overflow-x: auto;
+        width: 84%;
+        margin: 0 auto;
+        gap: 2px;
+    }
+    .consultpage .c-expert-container img{
+        width:100%
+    }
+    .consultpage .consult-hero>div{
+        display: none;
+    }
+    .consultpage .consult-hero >img{
+        display: block;
+    }
+    .consultpage .experts-title h2{
+        font-size: 24px;
+    }
+    .experts{
+        margin-bottom: 0px;
+    }
+}
